@@ -1,0 +1,142 @@
+/* GTK3 CSS Template for Pywal */
+/* This file will be used to theme Thunar and other GTK applications */
+
+/* Thunar File Manager */
+.thunar .sidebar .view {{ 
+    background-color: {color0}; 
+    color: {foreground};
+}}
+
+.thunar .standard-view .view {{ 
+    background-color: {background}; 
+    color: {foreground};
+}}
+
+.thunar .standard-view .view:selected {{
+    background-color: {color1};
+    color: {background};
+}}
+
+.thunar .sidebar .view:selected {{
+    background-color: {color1};
+    color: {background};
+}}
+
+/* Thunar toolbar */
+.thunar toolbar, .thunar toolbar entry {{ 
+    background-color: {color8}; 
+    color: {foreground};
+}}
+
+/* Thunar status bar */
+.thunar grid paned grid {{ 
+    background-color: {color8}; 
+    color: {foreground};
+}}
+
+/* Remove borders for cleaner look */
+.thunar scrolledwindow {{ 
+    border-width: 0; 
+}}
+
+/* Thunar rubberband selection */
+.thunar .view .rubberband {{
+    background: rgba({color1.rgb}, 0.3);
+    border: 1px solid {color1};
+}}
+
+/* General GTK theming for other applications */
+.view {{
+    background-color: {background};
+    color: {foreground};
+}}
+
+.view:selected {{
+    background-color: {color1};
+    color: {background};
+}}
+
+/* Scrollbars */
+scrollbar {{
+    background-color: {color8};
+}}
+
+scrollbar slider {{
+    background-color: {color1};
+}}
+
+scrollbar slider:hover {{
+    background-color: {color2};
+}}
+
+/* Entry fields */
+entry {{
+    background-color: {color8};
+    color: {foreground};
+    border: 1px solid {color1};
+}}
+
+entry:focus {{
+    border-color: {color2};
+}}
+
+/* Buttons */
+button {{
+    background-color: {color8};
+    color: {foreground};
+    border: 1px solid {color1};
+}}
+
+button:hover {{
+    background-color: {color1};
+    color: {background};
+}}
+
+/* Menus */
+menu {{
+    background-color: {color0};
+    color: {foreground};
+    border: 1px solid {color1};
+}}
+
+menuitem:hover {{
+    background-color: {color1};
+    color: {background};
+}}
+
+/* Tooltips */
+tooltip {{
+    background-color: {color0};
+    color: {foreground};
+    border: 1px solid {color1};
+}}
+
+/* Header bars */
+headerbar {{
+    background-color: {color8};
+    color: {foreground};
+    border-bottom: 1px solid {color1};
+}}
+
+/* Tree views (for file managers, etc) */
+treeview {{
+    background-color: {background};
+    color: {foreground};
+}}
+
+treeview:selected {{
+    background-color: {color1};
+    color: {background};
+}}
+
+/* Notebooks/Tabs */
+notebook tab {{
+    background-color: {color8};
+    color: {foreground};
+    border: 1px solid {color1};
+}}
+
+notebook tab:checked {{
+    background-color: {color1};
+    color: {background};
+}} 

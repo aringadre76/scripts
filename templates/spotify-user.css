@@ -1,0 +1,162 @@
+/* Pywal Spotify Theme */
+
+:root {{
+  --spice-text: {foreground};
+  --spice-subtext: {color7};
+  --spice-main: {background};
+  --spice-sidebar: {color0};
+  --spice-player: {color0};
+  --spice-card: {color8};
+  --spice-shadow: {color8};
+  --spice-selected-row: {color3};
+  --spice-button: {color4};
+  --spice-button-active: {color6};
+  --spice-button-disabled: {color8};
+  --spice-tab-active: {color4};
+  --spice-notification: {color2};
+  --spice-notification-error: {color1};
+  --spice-misc: {color0};
+  --spice-accent: {color4};
+  --spice-green: {color2};
+  --spice-red: {color1};
+  --spice-yellow: {color3};
+}}
+
+/* Main background */
+.Root__main-view,
+.Root__top-container {{
+  background-color: var(--spice-main) !important;
+}}
+
+/* Sidebar */
+.Root__nav-bar,
+.LayoutResizer__resize-bar,
+nav[aria-label="Main"] {{
+  background-color: var(--spice-sidebar) !important;
+}}
+
+/* Player bar */
+.Root__now-playing-bar,
+footer[data-testid="now-playing-bar"] {{
+  background-color: var(--spice-player) !important;
+  border-top: 1px solid var(--spice-card);
+}}
+
+/* Cards and containers */
+.Card,
+.main-card-card,
+.main-entityHeader-container,
+.main-shelf-shelf {{
+  background-color: var(--spice-card) !important;
+}}
+
+/* Text colors */
+.Type__TypeElement-sc-goli3j-0,
+.main-type-mestoBold,
+.main-type-balladBold,
+h1, h2, h3, h4, h5, h6,
+.main-entityHeader-title,
+.main-trackList-trackListHeaderRow {{
+  color: var(--spice-text) !important;
+}}
+
+/* Subtext */
+.Type__TypeElement-sc-goli3j-0.gAmaLX,
+.main-type-mesto,
+.main-entityHeader-subtitle,
+.main-trackList-rowSubTitle {{
+  color: var(--spice-subtext) !important;
+}}
+
+/* Buttons */
+.Button-sc-1dqy6lx-0,
+.main-playButton-PlayButton,
+.main-playPauseButton-button,
+button[data-testid="play-button"] {{
+  background-color: var(--spice-button) !important;
+  color: var(--spice-text) !important;
+}}
+
+.Button-sc-1dqy6lx-0:hover,
+.main-playButton-PlayButton:hover,
+.main-playPauseButton-button:hover {{
+  background-color: var(--spice-button-active) !important;
+}}
+
+/* Navigation items */
+.main-navBar-navBarLinkActive,
+.main-navBar-navBarLink:hover {{
+  background-color: var(--spice-selected-row) !important;
+}}
+
+/* Search bar */
+.main-search-searchCategory,
+input[data-testid="search-input"] {{
+  background-color: var(--spice-card) !important;
+  color: var(--spice-text) !important;
+}}
+
+/* Progress bar */
+.progress-bar__bg,
+.playback-bar__progress-time-elapsed {{
+  background-color: var(--spice-accent) !important;
+}}
+
+/* Volume bar */
+.volume-bar__bg {{
+  background-color: var(--spice-accent) !important;
+}}
+
+/* Scrollbars */
+::-webkit-scrollbar-track {{
+  background: var(--spice-main);
+}}
+
+::-webkit-scrollbar-thumb {{
+  background: var(--spice-card);
+}}
+
+::-webkit-scrollbar-thumb:hover {{
+  background: var(--spice-accent);
+}}
+
+/* Context menus */
+.main-contextMenu-menu,
+.main-contextMenu-menuItem {{
+  background-color: var(--spice-sidebar) !important;
+  color: var(--spice-text) !important;
+}}
+
+.main-contextMenu-menuItem:hover {{
+  background-color: var(--spice-selected-row) !important;
+}}
+
+/* Playlist items */
+.main-trackList-trackListRow:hover {{
+  background-color: var(--spice-selected-row) !important;
+}}
+
+/* Like button */
+.main-addButton-button[aria-checked="true"],
+.control-button--active {{
+  color: var(--spice-green) !important;
+}}
+
+/* Modal backgrounds */
+.GenericModal,
+.main-trackCreditsModal-container {{
+  background-color: var(--spice-main) !important;
+}}
+
+/* Input fields */
+input, textarea {{
+  background-color: var(--spice-card) !important;
+  color: var(--spice-text) !important;
+  border: 1px solid var(--spice-accent);
+}}
+
+/* Notification */
+.main-snackBar-snackBar {{
+  background-color: var(--spice-notification) !important;
+  color: var(--spice-text) !important;
+}} 
